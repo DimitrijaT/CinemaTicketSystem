@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CinemaTicketSystem", "CinemaTicketSystem", "{9F48DFFD-6735-49FA-8F05-21A9E1958776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CinemaTicketSystem.Web", "CinemaTicketSystem.Web\CinemaTicketSystem.Web.csproj", "{C51A1ED9-6768-4DEA-BD45-3918FF74FCD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C51A1ED9-6768-4DEA-BD45-3918FF74FCD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C51A1ED9-6768-4DEA-BD45-3918FF74FCD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C51A1ED9-6768-4DEA-BD45-3918FF74FCD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C51A1ED9-6768-4DEA-BD45-3918FF74FCD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C51A1ED9-6768-4DEA-BD45-3918FF74FCD6} = {9F48DFFD-6735-49FA-8F05-21A9E1958776}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {68171E92-B0BB-4266-9834-7694C48509F1}
+	EndGlobalSection
+EndGlobal
