@@ -26,5 +26,7 @@ namespace CinemaTicketSystem.Web.Models.Domain
         public int Price { get; set; }
 
         public virtual ICollection<ShoppingCartTicket> ShoppingCartTickets { get; set; }
+
+        public virtual IEnumerable<TicketOrder> TicketOrder { get; set; }
     }
 }

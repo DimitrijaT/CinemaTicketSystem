@@ -171,3 +171,4 @@ C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTi
 C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\obj\Debug\netcoreapp3.1\Razor\Views\Tickets\AddTicketToCart.cshtml.g.cs
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\obj\Debug\netcoreapp3.1\Razor\Views\ShoppingCart\Index.cshtml.g.cs

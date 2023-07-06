@@ -1,0 +1,65 @@
+﻿@model CinemaTicketSystem.Web.Models.Dto.ShoppingCartDto
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container">
+
+
+    @if (Model.ShoppingCartTickets.Count == 0)
+    {
+        <div class="d-flex justify-content-center align-items-center">
+            <h1>Shopping Cart is Empty 😔</h1>
+        </div>
+    }
+    else
+    {
+
+        <div class="row m-4">
+            <a class="btn btn-info" asp-controller="ShoppingCart" asp-action="Order">Order Now</a>
+        </div>
+
+
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Movie Name</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.ShoppingCartTickets.Count; i++)
+                {
+                    var item = Model.ShoppingCartTickets[i];
+                    <tr>
+                        <th scope="row">@(i+1)</th>
+                        <td>@item.Ticket.MovieName</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.Ticket.Price</td>
+                        <td><a asp-controller="ShoppingCart" asp-action="DeleteFromShoppingCart" asp-route-id="@item.Ticket.Id" class="btn btn-danger">Delete From Shopping Cart</a></td>
+                    </tr>
+
+                }
+            </tbody>
+
+            <tfoot class="thead-dark">
+                <tr>
+                    <th scope="col">Total Price:</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col">@Model.TotalPrice</th>
+                    <th></th>
+                </tr>
+            </tfoot>
+        </table>
+    }
+
+</div>

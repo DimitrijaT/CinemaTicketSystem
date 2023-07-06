@@ -23,6 +23,10 @@ namespace CinemaTicketSystem.Web.Data
 
         public virtual DbSet<ShoppingCartTicket> ShoppingCartTickets { get; set; }
 
+        public virtual DbSet<Order> Orders { get; set; }
+
+        public virtual DbSet<TicketOrder> TicketOrders { get; set; }
+
 
         // Adding FluentApi Entity Constriants
 
@@ -57,6 +61,23 @@ namespace CinemaTicketSystem.Web.Data
                 .HasOne(z => z.ShoppingCart)
                 .WithMany(z => z.ShoppingCartTickets)
                 .HasForeignKey(z => z.ShoppingCartId);
+
+
+            // Config ManyToMany
+
+            builder.Entity<TicketOrder>()
+                .HasKey(z => new { z.TicketId, z.OrderId });
+
+
+            builder.Entity<TicketOrder>()
+                .HasOne(z => z.OrderedTicket)
+                .WithMany(z => z.TicketOrder)
+                .HasForeignKey(z => z.TicketId);
+
+            builder.Entity<TicketOrder>()
+                .HasOne(z => z.UserOrder)
+                .WithMany(z => z.TicketOrders)
+                .HasForeignKey(z => z.OrderId);
 
             // Config OneToOne
 
