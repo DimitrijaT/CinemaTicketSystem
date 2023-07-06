@@ -18,6 +18,7 @@ namespace CinemaTicketSystem.Web.Controllers
             _logger = logger;
         }
 
+        // Action == Endpoint
         public IActionResult Index()
         {
             return View();

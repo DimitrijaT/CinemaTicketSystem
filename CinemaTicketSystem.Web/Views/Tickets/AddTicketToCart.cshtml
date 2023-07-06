@@ -1,0 +1,33 @@
+﻿@model CinemaTicketSystem.Web.Models.Dto.AddToShoppingCartDto
+
+@{
+    ViewData["Title"] = "Add to Shopping Card";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<div>Add Selected Product to User Shopping Card:</div>
+
+<hr />
+
+<div class="row">
+    <div class="col-md-4 m-auto">
+        <form asp-action="AddTicketToCart" asp-controller="Tickets" method="post">
+             @*<input type="hidden" value="@Model.SelectedProductId" />*@
+            <input type="hidden" asp-for="SelectedTicketId" />
+            <div class="form-group">
+                <label asp-for="SelectedTicket.MovieName"></label>
+                <input disabled asp-for="SelectedTicket.MovieName" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Quantity"></label>
+                <input type="number" asp-for="Quantity" class="form-control" value="1"/>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
