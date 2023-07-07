@@ -1,5 +1,5 @@
 ﻿@using Microsoft.AspNetCore.Identity
-@using CinemaTicketSystem.Web.Models.Identity
+@using CinemaTicketSystem.Domain.Identity
 @inject SignInManager<CinemaTicketSystemUser> SignInManager
 @inject UserManager<CinemaTicketSystemUser> UserManager
 
@@ -20,7 +20,6 @@
         <li class="nav-item">
             @*<a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Register">Register</a>*@
             <a class="nav-link text-dark" asp-controller="Account" asp-action="Register">Register</a>
-
         </li>
         <li class="nav-item">
             @*<a class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Login">Login</a>*@

@@ -1,7 +1,6 @@
-﻿using CinemaTicketSystem.Web.Models.Domain;
-using CinemaTicketSystem.Web.Models.Identity;
-using CinemaTicketSystem.Web.Models.Dto;
-//using EShop.Web.Models.Identity;
+﻿using CinemaTicketSystem.Domain.DomainModels;
+using CinemaTicketSystem.Domain.Dto;
+using CinemaTicketSystem.Domain.Identity;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -15,10 +14,10 @@ namespace EShop.Web.Controllers
     {
         private readonly UserManager<CinemaTicketSystemUser> userManager;
         private readonly SignInManager<CinemaTicketSystemUser> signInManager;
+
         public AccountController(UserManager<CinemaTicketSystemUser> userManager,
             SignInManager<CinemaTicketSystemUser> signInManager)
         {
-
             this.userManager = userManager;
             this.signInManager = signInManager;
         }
@@ -49,8 +48,7 @@ namespace EShop.Web.Controllers
                         PhoneNumber = request.PhoneNumber,
                         EmailConfirmed = true,
                         PhoneNumberConfirmed = true,
-                        //UserCart = new Models.Domain.ShoppingCart()
-                        UserCart = new CinemaTicketSystem.Web.Models.Domain.ShoppingCart()
+                        UserCart = new ShoppingCart()
                     };
                     var result = await userManager.CreateAsync(user, request.Password);
                     if (result.Succeeded)
@@ -76,9 +74,7 @@ namespace EShop.Web.Controllers
                 }
             }
             return View(request);
-
         }
-
 
         [HttpGet, AllowAnonymous]
         public IActionResult Login()
@@ -86,7 +82,6 @@ namespace EShop.Web.Controllers
             UserLoginDto model = new UserLoginDto();
             return View(model);
         }
-
 
         [HttpPost]
         [AllowAnonymous]
@@ -99,13 +94,11 @@ namespace EShop.Web.Controllers
                 {
                     ModelState.AddModelError("message", "Email not confirmed yet");
                     return View(model);
-
                 }
                 if (await userManager.CheckPasswordAsync(user, model.Password) == false)
                 {
                     ModelState.AddModelError("message", "Invalid credentials");
                     return View(model);
-
                 }
 
                 var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, true, true);

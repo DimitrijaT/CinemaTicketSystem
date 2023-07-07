@@ -1,10 +1,7 @@
 ﻿@*@model EShop.Web.Models.DTO.UserLoginDto*@
-@model CinemaTicketSystem.Web.Models.Dto.UserLoginDto
-@{
-    ViewData["Title"] = "Login";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
+@model CinemaTicketSystem.Domain.Dto.UserLoginDto
+@{ ViewData["Title"] = "Login";
+                Layout = "~/Views/Shared/_Layout.cshtml"; }
 
 <h1>Test :3</h1>
 
@@ -37,7 +34,6 @@
                 <div class="col-sm-12 btn-submit">
                     <button type="submit" class="btn btn-success">Login</button>
                     <a asp-action="Register" asp-controller="account">Don't have an account?Click to Register</a>
-
                 </div>
             </div>
         </div>

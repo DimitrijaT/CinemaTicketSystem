@@ -4,14 +4,14 @@
     "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Web\\CinemaTicketSystem.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Web\\CinemaTicketSystem.Web.csproj": {
+    "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Domain\\CinemaTicketSystem.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Web\\CinemaTicketSystem.Web.csproj",
-        "projectName": "CinemaTicketSystem.Web",
-        "projectPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Web\\CinemaTicketSystem.Web.csproj",
+        "projectUniqueName": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Domain\\CinemaTicketSystem.Domain.csproj",
+        "projectName": "CinemaTicketSystem.Domain",
+        "projectPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Domain\\CinemaTicketSystem.Domain.csproj",
         "packagesPath": "C:\\Users\\dimit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Web\\obj\\",
+        "outputPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dimit\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,9 +40,208 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Repository\\CinemaTicketSystem.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Repository\\CinemaTicketSystem.Repository.csproj",
+        "projectName": "CinemaTicketSystem.Repository",
+        "projectPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Repository\\CinemaTicketSystem.Repository.csproj",
+        "packagesPath": "C:\\Users\\dimit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dimit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Domain\\CinemaTicketSystem.Domain.csproj": {
+                "projectPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Domain\\CinemaTicketSystem.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Service\\CinemaTicketSystem.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Service\\CinemaTicketSystem.Service.csproj",
+        "projectName": "CinemaTicketSystem.Service",
+        "projectPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Service\\CinemaTicketSystem.Service.csproj",
+        "packagesPath": "C:\\Users\\dimit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dimit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Domain\\CinemaTicketSystem.Domain.csproj": {
+                "projectPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Domain\\CinemaTicketSystem.Domain.csproj"
+              },
+              "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Repository\\CinemaTicketSystem.Repository.csproj": {
+                "projectPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Repository\\CinemaTicketSystem.Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Web\\CinemaTicketSystem.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Web\\CinemaTicketSystem.Web.csproj",
+        "projectName": "CinemaTicketSystem.Web",
+        "projectPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Web\\CinemaTicketSystem.Web.csproj",
+        "packagesPath": "C:\\Users\\dimit\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dimit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Domain\\CinemaTicketSystem.Domain.csproj": {
+                "projectPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Domain\\CinemaTicketSystem.Domain.csproj"
+              },
+              "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Repository\\CinemaTicketSystem.Repository.csproj": {
+                "projectPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Repository\\CinemaTicketSystem.Repository.csproj"
+              },
+              "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Service\\CinemaTicketSystem.Service.csproj": {
+                "projectPath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Service\\CinemaTicketSystem.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[3.1.31, )"
+              "version": "[3.1.12, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -50,17 +249,17 @@
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
-              "version": "[3.1.31, )"
+              "version": "[3.1.12, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[3.1.12, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.32, )"
+              "version": "[3.1.12, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",

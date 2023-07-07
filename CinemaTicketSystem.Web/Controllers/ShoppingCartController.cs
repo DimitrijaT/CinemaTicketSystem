@@ -1,154 +1,88 @@
-﻿using CinemaTicketSystem.Web.Data;
-using CinemaTicketSystem.Web.Models.Domain;
-using CinemaTicketSystem.Web.Models.Dto;
+﻿using CinemaTicketSystem.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
-using System.Threading.Tasks;
 
 namespace CinemaTicketSystem.Web.Controllers
 {
     public class ShoppingCartController : Controller
     {
+        private readonly IShoppingCartService _shoppingCartService;
 
-        private readonly ApplicationDbContext _context;
-
-        public ShoppingCartController(ApplicationDbContext context)
+        public ShoppingCartController(IShoppingCartService shoppingCartService)
         {
-            _context = context;
+            _shoppingCartService = shoppingCartService;
         }
 
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-            // Get the ID of the logged in User:
-            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            // Select * from Users where Id LIKE userId
+            return View(this._shoppingCartService.getShoppingCartInfo(userId));
+        }
 
-            var loggedInUser = await _context.Users.Where(z => z.Id == userId)
-                .Include("UserCart")
-                .Include("UserCart.ShoppingCartTickets")
-                .Include("UserCart.ShoppingCartTickets.Ticket")
-                .FirstOrDefaultAsync();
+        public IActionResult DeleteFromShoppingCart(Guid id)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            var userShoppingCart = loggedInUser.UserCart;
+            var result = this._shoppingCartService.deleteProductFromSoppingCart(userId, id);
 
-            var AllTickets = userShoppingCart.ShoppingCartTickets.ToList();
-
-            // Get the sum of all Tickets:
-
-            var AllTicketPrice = AllTickets.Select(z => new
+            if (result)
             {
-                Price = z.Ticket.Price,
-                Quantity = z.Quantity
-            }).ToList();
-
-            var totalPrice = 0;
-
-            foreach (var item in AllTicketPrice)
-            {
-                totalPrice += item.Quantity * item.Price;
+                return RedirectToAction("Index", "ShoppingCart");
             }
-
-            ShoppingCartDto scDto = new ShoppingCartDto
+            else
             {
-                ShoppingCartTickets = AllTickets,
-                TotalPrice = totalPrice
-            };
-
-
-            return View(scDto);
-        }
-
-
-        public async Task<IActionResult> DeleteFromShoppingCart(Guid? id)
-        {
-            // Get the ID of the logged in User:
-            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            // Select * from Users where Id LIKE userId
-            if (!string.IsNullOrEmpty(userId) && id != null)
-            {
-                var loggedInUser = await _context.Users.Where(z => z.Id == userId)
-                    .Include("UserCart")
-                    .Include("UserCart.ShoppingCartTickets")
-                    .Include("UserCart.ShoppingCartTickets.Ticket")
-                    .FirstOrDefaultAsync();
-
-                var userShoppingCart = loggedInUser.UserCart;
-
-                // Get the item we want to delete
-                var itemToDelete = userShoppingCart.ShoppingCartTickets.Where(z => z.TicketId == id).FirstOrDefault();
-
-                userShoppingCart.ShoppingCartTickets.Remove(itemToDelete);
-
-                // Update Database for deleted ticket
-                _context.Update(userShoppingCart);
-                await _context.SaveChangesAsync();
+                return RedirectToAction("Index", "ShoppingCart");
             }
-
-            return RedirectToAction("Index", "ShoppingCart");
         }
 
-
-        public async Task<IActionResult> Order()
+        public Boolean Order()
         {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            // Get the ID of the logged in User:
-            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var result = this._shoppingCartService.order(userId);
 
-            // Select * from Users where Id LIKE userId
-            if (!string.IsNullOrEmpty(userId))
-            {
-                var loggedInUser = await _context.Users.Where(z => z.Id == userId)
-                    .Include("UserCart")
-                    .Include("UserCart.ShoppingCartTickets")
-                    .Include("UserCart.ShoppingCartTickets.Ticket")
-                    .FirstOrDefaultAsync();
-
-                var userShoppingCart = loggedInUser.UserCart;
-
-                Order order = new Order
-                {
-                    Id = Guid.NewGuid(),
-                    User = loggedInUser,
-                    UserId = userId
-                };
-
-                _context.Add(order);
-
-                await _context.SaveChangesAsync();
-
-                // Da se postavat biletite vo narachkata
-
-                List<TicketOrder> ticketOrders = new List<TicketOrder>();
-
-                var result = userShoppingCart.ShoppingCartTickets.Select(z => new TicketOrder
-                {
-                    TicketId = z.Ticket.Id,
-                    OrderedTicket = z.Ticket,
-                    OrderId = order.Id,
-                    UserOrder = order
-                }).ToList();
-
-                ticketOrders.AddRange(result);
-
-                foreach (var item in ticketOrders)
-                {
-                    _context.Add(item);
-                }
-                await _context.SaveChangesAsync();
-
-                loggedInUser.UserCart.ShoppingCartTickets.Clear();
-
-                _context.Update(loggedInUser);
-                await _context.SaveChangesAsync();
-            }
-
-            return RedirectToAction("Index", "ShoppingCart");
+            return result;
         }
+
+        //public IActionResult PayOrder(string stripeEmail, string stripeToken)
+        //{
+        //    var customerService = new CustomerService();
+        //    var chargeService = new ChargeService();
+        //    string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+        //    var order = this._shoppingCartService.getShoppingCartInfo(userId);
+
+        //    var customer = customerService.Create(new CustomerCreateOptions
+        //    {
+        //        Email = stripeEmail,
+        //        Source = stripeToken
+        //    });
+
+        //var charge = chargeService.Create(new ChargeCreateOptions
+        //{
+        //    Amount = (Convert.ToInt32(order.TotalPrice) * 100),
+        //    Description = "EShop Application Payment",
+        //    Currency = "usd",
+        //    Customer = customer.Id
+        //});
+
+        //    if (charge.Status == "succeeded")
+        //    {
+        //        var result = this.Order();
+
+        //        if (result)
+        //        {
+        //            return RedirectToAction("Index", "ShoppingCard");
+        //        }
+        //        else
+        //        {
+        //            return RedirectToAction("Index", "ShoppingCard");
+        //        }
+        //    }
+
+        //    return RedirectToAction("Index", "ShoppingCard");
+        //}
     }
 }

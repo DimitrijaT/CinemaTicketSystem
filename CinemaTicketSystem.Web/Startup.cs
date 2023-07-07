@@ -1,18 +1,15 @@
-using CinemaTicketSystem.Web.Data;
-using CinemaTicketSystem.Web.Models.Identity;
+using CinemaTicketSystem.Domain.Identity;
+using CinemaTicketSystem.Repository;
+using CinemaTicketSystem.Repository.Implementation;
+using CinemaTicketSystem.Repository.Interface;
+using CinemaTicketSystem.Service.Implementation;
+using CinemaTicketSystem.Service.Interface;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace CinemaTicketSystem.Web
 {
@@ -33,6 +30,15 @@ namespace CinemaTicketSystem.Web
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddDefaultIdentity<CinemaTicketSystemUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IUserRepository), typeof(UserRepository));
+            services.AddScoped(typeof(IOrderRepository), typeof(OrderRepository));
+
+            services.AddTransient<ITicketService, TicketService>();
+            services.AddTransient<IShoppingCartService, Service.Implementation.ShoppingCartService>();
+            services.AddTransient<IOrderService, Service.Implementation.OrderService>();
+
             services.AddControllersWithViews();
             services.AddRazorPages();
         }

@@ -1,0 +1,13 @@
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Repository\bin\Debug\netcoreapp3.1\CinemaTicketSystem.Repository.deps.json
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Repository\bin\Debug\netcoreapp3.1\CinemaTicketSystem.Repository.dll
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Repository\bin\Debug\netcoreapp3.1\CinemaTicketSystem.Repository.pdb
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Repository\bin\Debug\netcoreapp3.1\CinemaTicketSystem.Domain.dll
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Repository\bin\Debug\netcoreapp3.1\CinemaTicketSystem.Domain.pdb
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Repository\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Repository.csproj.AssemblyReference.cache
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Repository\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Repository\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Repository.AssemblyInfoInputs.cache
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Repository\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Repository.AssemblyInfo.cs
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Repository\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Repository.csproj.CoreCompileInputs.cache
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Repository\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Repository.csproj.CopyComplete
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Repository\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Repository.dll
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Repository\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Repository.pdb

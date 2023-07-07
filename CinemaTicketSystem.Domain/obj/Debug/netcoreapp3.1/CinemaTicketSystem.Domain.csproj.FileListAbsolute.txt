@@ -1,0 +1,10 @@
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Domain\bin\Debug\netcoreapp3.1\CinemaTicketSystem.Domain.deps.json
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Domain\bin\Debug\netcoreapp3.1\CinemaTicketSystem.Domain.dll
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Domain\bin\Debug\netcoreapp3.1\CinemaTicketSystem.Domain.pdb
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Domain\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Domain.csproj.AssemblyReference.cache
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Domain\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Domain\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Domain\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Domain.AssemblyInfo.cs
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Domain\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Domain\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Domain.dll
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Domain\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Domain.pdb

@@ -1,14 +1,11 @@
-﻿@model CinemaTicketSystem.Web.Models.Dto.ShoppingCartDto
+﻿@model CinemaTicketSystem.Domain.Dto.ShoppingCartDto
 
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-
-
 <div class="container">
-
 
     @if (Model.ShoppingCartTickets.Count == 0)
     {
@@ -22,7 +19,6 @@
         <div class="row m-4">
             <a class="btn btn-info" asp-controller="ShoppingCart" asp-action="Order">Order Now</a>
         </div>
-
 
         <table class="table">
             <thead class="thead-dark">
@@ -61,5 +57,4 @@
             </tfoot>
         </table>
     }
-
 </div>
