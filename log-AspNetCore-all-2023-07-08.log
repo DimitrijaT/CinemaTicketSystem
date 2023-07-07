@@ -1,0 +1,11 @@
+2023-07-08 00:59:49.8240|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-08 00:59:51.0975|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-08 00:59:51.0975|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-08 00:59:51.1176|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-08 01:07:10.0093|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-08 01:07:11.3732|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-08 01:07:11.3834|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-08 01:07:11.3834|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-08 01:07:13.7385|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-08 01:07:18.3741|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-08 01:07:18.4947|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 

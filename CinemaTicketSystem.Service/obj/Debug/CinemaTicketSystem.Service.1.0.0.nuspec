@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>CinemaTicketSystem.Service</id>
+    <version>1.0.0</version>
+    <authors>CinemaTicketSystem.Service</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="CinemaTicketSystem.Domain" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="CinemaTicketSystem.Repository" version="1.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Service\bin\Debug\netcoreapp3.1\CinemaTicketSystem.Service.dll" target="lib\netcoreapp3.1\CinemaTicketSystem.Service.dll" />
+  </files>
+</package>

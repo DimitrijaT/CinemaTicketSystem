@@ -6,8 +6,8 @@
 }
 
 <div class="container">
-
-    @if (Model.ShoppingCartTickets.Count == 0)
+     
+    @if (Model != null && Model.ShoppingCartTickets.Count == 0)
     {
         <div class="d-flex justify-content-center align-items-center">
             <h1>Shopping Cart is Empty 😔</h1>

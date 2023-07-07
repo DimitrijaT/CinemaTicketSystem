@@ -178,3 +178,7 @@ C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTi
 C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Web.dll
 C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Web.pdb
 C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\obj\Debug\netcoreapp3.1\CinemaTicketSystem.Web.genruntimeconfig.cache
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\bin\Debug\netcoreapp3.1\nlog.config
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\bin\Debug\netcoreapp3.1\NLog.dll
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll

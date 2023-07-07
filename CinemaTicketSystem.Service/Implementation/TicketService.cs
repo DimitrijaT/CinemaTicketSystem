@@ -2,6 +2,7 @@
 using CinemaTicketSystem.Domain.Dto;
 using CinemaTicketSystem.Repository.Interface;
 using CinemaTicketSystem.Service.Interface;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,12 +14,17 @@ namespace CinemaTicketSystem.Service.Implementation
         private readonly IRepository<Ticket> _ticketRepository;
         private readonly IRepository<ShoppingCartTicket> _shoppingCartTicketRepository;
         private readonly IUserRepository _userRepository;
+        private readonly ILogger<TicketService> _logger; // Logger
 
-        public TicketService(IUserRepository userRepository, IRepository<Ticket> ticketRepository, IRepository<ShoppingCartTicket> shoppingCartTicketRepository)
+        public TicketService(IUserRepository userRepository,
+            IRepository<Ticket> ticketRepository,
+            IRepository<ShoppingCartTicket> shoppingCartTicketRepository,
+            ILogger<TicketService> logger)
         {
             _userRepository = userRepository;
             _ticketRepository = ticketRepository;
             _shoppingCartTicketRepository = shoppingCartTicketRepository;
+            _logger = logger; // Logger
         }
 
         public bool AddToShoppingCart(AddToShoppingCartDto item, string userID)
@@ -42,11 +48,13 @@ namespace CinemaTicketSystem.Service.Implementation
                         Quantity = item.Quantity
                     };
 
+                    _logger.LogInformation("Ticket was successfully added into ShoppingCart");
                     this._shoppingCartTicketRepository.Insert(itemToAdd);
                     return true;
                 }
                 return false;
             }
+            _logger.LogInformation("Something was wrong. TicketId or UserShoppingCart may be unavailible!");
             return false;
         }
 
@@ -63,6 +71,7 @@ namespace CinemaTicketSystem.Service.Implementation
 
         public List<Ticket> GetAllTickets()
         {
+            _logger.LogInformation("GetAllProducts was called!");
             return this._ticketRepository.GetAll().ToList();
         }
 

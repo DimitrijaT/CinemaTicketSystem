@@ -42,8 +42,14 @@ namespace CinemaTicketSystem.Repository
 
             // Config ManyToMany
 
+            //builder.Entity<ShoppingCartTicket>()
+            //    .HasKey(z => new { z.TicketId, z.ShoppingCartId });
+
+            // We change to:
+
             builder.Entity<ShoppingCartTicket>()
-                .HasKey(z => new { z.TicketId, z.ShoppingCartId });
+                .Property(z => z.Id)
+                .ValueGeneratedOnAdd();
 
             builder.Entity<ShoppingCartTicket>()
                 .HasOne(z => z.Ticket)
@@ -58,7 +64,8 @@ namespace CinemaTicketSystem.Repository
             // Config ManyToMany
 
             builder.Entity<TicketOrder>()
-                .HasKey(z => new { z.TicketId, z.OrderId });
+                .Property(z => z.Id)
+                .ValueGeneratedOnAdd();
 
             builder.Entity<TicketOrder>()
                 .HasOne(z => z.OrderedTicket)

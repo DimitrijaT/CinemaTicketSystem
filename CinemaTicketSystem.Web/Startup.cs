@@ -36,8 +36,8 @@ namespace CinemaTicketSystem.Web
             services.AddScoped(typeof(IOrderRepository), typeof(OrderRepository));
 
             services.AddTransient<ITicketService, TicketService>();
-            services.AddTransient<IShoppingCartService, Service.Implementation.ShoppingCartService>();
-            services.AddTransient<IOrderService, Service.Implementation.OrderService>();
+            services.AddTransient<IShoppingCartService, ShoppingCartService>();
+            services.AddTransient<IOrderService, OrderService>();
 
             services.AddControllersWithViews();
             services.AddRazorPages();
@@ -65,6 +65,7 @@ namespace CinemaTicketSystem.Web
             app.UseAuthentication();
             app.UseAuthorization();
 
+            // Choose a Controller to redirect the user to. (Sorta like a Proxy server)
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
