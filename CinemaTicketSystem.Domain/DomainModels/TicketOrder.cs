@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json.Serialization;
 
 namespace CinemaTicketSystem.Domain.DomainModels
 {
@@ -10,6 +11,7 @@ namespace CinemaTicketSystem.Domain.DomainModels
 
         public Guid OrderId { get; set; }
 
+        //[JsonIgnore]
         public Order UserOrder { get; set; }
 
         public int Quantity { get; set; }

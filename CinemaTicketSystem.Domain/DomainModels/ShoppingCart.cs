@@ -7,7 +7,7 @@ namespace CinemaTicketSystem.Domain.DomainModels
     {
         public string OwnerId { get; set; }
 
-        public CinemaTicketSystemUser Owner { get; set; }
+        public virtual CinemaTicketSystemUser Owner { get; set; }
 
         public virtual ICollection<ShoppingCartTicket> ShoppingCartTickets { get; set; }
     }

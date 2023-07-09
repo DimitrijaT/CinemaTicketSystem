@@ -1,5 +1,6 @@
 ﻿using CinemaTicketSystem.Domain.Identity;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace CinemaTicketSystem.Domain.DomainModels
 {
@@ -9,6 +10,6 @@ namespace CinemaTicketSystem.Domain.DomainModels
 
         public CinemaTicketSystemUser User { get; set; }
 
-        public IEnumerable<TicketOrder> TicketOrders { get; set; }
+        public virtual IEnumerable<TicketOrder> TicketOrders { get; set; }
     }
 }

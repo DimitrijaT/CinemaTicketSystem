@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace CinemaTicketSystem.Domain.DomainModels
 {
@@ -23,6 +24,7 @@ namespace CinemaTicketSystem.Domain.DomainModels
 
         public virtual ICollection<ShoppingCartTicket> ShoppingCartTickets { get; set; }
 
+        //[JsonIgnore]
         public virtual IEnumerable<TicketOrder> TicketOrder { get; set; }
     }
 }

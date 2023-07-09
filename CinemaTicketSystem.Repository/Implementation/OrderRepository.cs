@@ -19,11 +19,13 @@ namespace CinemaTicketSystem.Repository.Implementation
 
         public List<Order> getAllOrders()
         {
-            return entities
+            var result = entities
                 .Include(z => z.User)
                 .Include(z => z.TicketOrders)
-                .Include("ProductInOrders.Product")
+                .Include("TicketOrders.OrderedTicket")
                 .ToListAsync().Result;
+
+            return result;
         }
 
         public Order getOrderDetails(BaseEntity model)
@@ -31,7 +33,7 @@ namespace CinemaTicketSystem.Repository.Implementation
             return entities
                .Include(z => z.User)
                .Include(z => z.TicketOrders)
-               .Include("ProductInOrders.Product")
+               .Include("TicketOrders.OrderedTicket")
                .SingleOrDefaultAsync(z => z.Id == model.Id).Result;
         }
     }

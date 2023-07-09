@@ -13,6 +13,6 @@ namespace CinemaTicketSystem.Domain.Identity
 
         public virtual ShoppingCart UserCart { get; set; }
 
-        public virtual ICollection<Order> Orders { get; set; }
+        //public virtual ICollection<Order> Orders { get; set; }
     }
 }

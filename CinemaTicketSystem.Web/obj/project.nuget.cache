@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "u88YBCb+MmIbuM/KEpfH0XeRPDfPoQDlDBs4p9besp/k3IijkEN0yM3PlhnA34xjzub6dv4iSREOcHhZ4v9BiQ==",
+  "dgSpecHash": "WKUppE1Ets+GWE9bqkuhsplVLyJ5mLZ0uH5vWNt72Vdny2IJd0iy6D3zxg77YMh0vy29OI/C96Er5iq84UV/kw==",
   "success": true,
   "projectFilePath": "C:\\Users\\dimit\\source\\repos\\SixthSemester\\ISHomework_CinemaTicketSystem\\CinemaTicketSystem.Web\\CinemaTicketSystem.Web.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,8 @@
     "C:\\Users\\dimit\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\dimit\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\3.1.31\\microsoft.aspnetcore.identity.entityframeworkcore.3.1.31.nupkg.sha512",
     "C:\\Users\\dimit\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\3.1.12\\microsoft.aspnetcore.identity.ui.3.1.12.nupkg.sha512",
+    "C:\\Users\\dimit\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.10\\microsoft.aspnetcore.jsonpatch.3.1.10.nupkg.sha512",
+    "C:\\Users\\dimit\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.10\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.10.nupkg.sha512",
     "C:\\Users\\dimit\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\dimit\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\3.1.0\\microsoft.aspnetcore.razor.language.3.1.0.nupkg.sha512",
     "C:\\Users\\dimit\\.nuget\\packages\\microsoft.aspnetcore.razor.runtime\\2.2.0\\microsoft.aspnetcore.razor.runtime.2.2.0.nupkg.sha512",
@@ -65,6 +67,7 @@
     "C:\\Users\\dimit\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\dimit\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\dimit\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\dimit\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\dimit\\.nuget\\packages\\nlog\\4.7.9\\nlog.4.7.9.nupkg.sha512",
     "C:\\Users\\dimit\\.nuget\\packages\\nlog.extensions.logging\\1.7.1\\nlog.extensions.logging.1.7.1.nupkg.sha512",
     "C:\\Users\\dimit\\.nuget\\packages\\nlog.web.aspnetcore\\4.11.0\\nlog.web.aspnetcore.4.11.0.nupkg.sha512",
