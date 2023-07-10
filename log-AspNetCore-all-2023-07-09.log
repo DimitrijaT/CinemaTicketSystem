@@ -30,3 +30,23 @@
 2023-07-09 17:55:58.6007|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
 2023-07-09 17:55:58.6007|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
 2023-07-09 17:55:58.6007|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-09 19:42:44.1527|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-09 19:42:46.3442|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-09 19:42:46.3442|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-09 19:42:46.3442|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-09 20:03:12.6545|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-09 20:03:14.0611|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-09 20:03:14.0611|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-09 20:03:14.0611|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-09 21:00:53.0504|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-09 21:00:54.6043|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-09 21:00:54.6200|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-09 21:00:54.6266|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-09 21:01:07.3877|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-09 21:01:15.0820|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-09 21:02:13.6827|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-09 21:02:23.6033|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-09 21:02:23.6208|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-09 21:02:35.6620|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-09 21:02:37.5675|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-09 21:02:37.5818|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 

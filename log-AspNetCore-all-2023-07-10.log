@@ -1,0 +1,87 @@
+2023-07-10 02:39:17.4643|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 02:39:18.7034|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 02:39:18.7508|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 02:39:18.7508|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 02:49:27.0946|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 02:49:28.2519|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 02:49:28.2519|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 02:49:28.2519|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 02:52:02.2799|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 02:52:03.7131|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 02:52:03.7131|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 02:52:03.7205|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 03:03:34.3027|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 03:03:35.7003|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 03:03:35.7027|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 03:03:35.7027|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 03:08:34.1316|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 03:08:35.5419|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 03:08:35.5514|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 03:08:35.5514|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 03:18:49.3850|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 03:18:51.2201|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 03:18:51.2201|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 03:18:51.2201|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 03:23:43.6389|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 03:23:45.3057|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 03:23:45.3057|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 03:23:45.3141|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 03:31:18.7182|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 03:31:19.9709|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 03:31:19.9709|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 03:31:19.9709|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 03:37:58.7281|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 03:38:00.4906|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 03:38:00.4906|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 03:38:00.4987|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 03:41:07.9125|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 03:41:09.1623|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 03:41:09.1623|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 03:41:09.1702|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 03:41:21.4490|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 03:41:21.6666|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 03:44:02.6615|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 03:44:03.7674|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 03:44:03.7674|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 03:44:03.7674|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 03:48:48.3651|14|WARN|Microsoft.AspNetCore.Identity.UserManager|User 8608c1dd-5684-440f-a2c9-3ce465c217b1 password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresUpper. 
+2023-07-10 03:48:48.3873|14|WARN|Microsoft.AspNetCore.Identity.UserManager|User e233714d-1782-4e9e-9ea5-544a648f7901 password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresUpper. 
+2023-07-10 03:49:09.4234|14|WARN|Microsoft.AspNetCore.Identity.UserManager|User 94d298cc-e962-4259-a4d8-1993c87629e3 password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresUpper. 
+2023-07-10 03:49:23.5467|14|WARN|Microsoft.AspNetCore.Identity.UserManager|User 1bafb480-c8ff-4fe3-930f-e0e88e55c5e1 password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresUpper. 
+2023-07-10 11:13:05.3694|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 11:13:07.0220|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 11:13:07.0362|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 11:13:07.0362|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 11:13:12.7831|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 11:13:14.7750|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 11:13:40.5915|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 11:13:42.0835|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 11:13:42.0835|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 11:13:42.0835|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 11:13:43.0298|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 11:14:01.8429|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 11:14:02.7790|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 11:14:02.7814|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 11:14:02.7814|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 11:14:05.4798|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 11:14:06.4326|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 11:24:17.4196|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 11:24:18.5443|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 11:24:18.5465|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 11:24:18.5465|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 11:27:04.9970|14|WARN|Microsoft.AspNetCore.Identity.UserManager|User 365f4afe-95ae-469d-8f0c-e267197d1758 password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresUpper. 
+2023-07-10 11:27:12.1241|14|WARN|Microsoft.AspNetCore.Identity.UserManager|User 350e6d16-1097-4329-90a4-0d4e21db4af3 password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresUpper. 
+2023-07-10 11:30:36.3915|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 11:30:37.5598|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 11:30:37.5626|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 11:30:37.5626|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 11:30:50.9430|14|WARN|Microsoft.AspNetCore.Identity.UserManager|User c61ad602-0d40-479c-bb03-561726419d38 password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresUpper. 
+2023-07-10 11:34:04.9518|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 11:34:06.3988|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 11:34:06.4175|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 11:34:06.4255|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 11:34:36.8473|14|WARN|Microsoft.AspNetCore.Identity.UserManager|User bd321979-379c-484a-8972-00cf9e77f099 password validation failed: PasswordRequiresUpper. 
+2023-07-10 11:34:51.0081|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 11:34:52.1733|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 11:34:52.1733|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 11:34:52.1733|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
