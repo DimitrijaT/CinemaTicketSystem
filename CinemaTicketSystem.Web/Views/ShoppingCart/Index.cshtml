@@ -1,4 +1,6 @@
-﻿@model CinemaTicketSystem.Domain.Dto.ShoppingCartDto
+﻿@using Microsoft.Extensions.Options
+@inject IOptions<CinemaTicketSystem.Domain.StripeSettings> StripeSettingsData
+@model CinemaTicketSystem.Domain.Dto.ShoppingCartDto
 
 @{
     ViewData["Title"] = "Index";
@@ -6,7 +8,7 @@
 }
 
 <div class="container">
-     
+
     @if (Model != null && Model.ShoppingCartTickets.Count == 0)
     {
         <div class="d-flex justify-content-center align-items-center">
@@ -17,7 +19,20 @@
     {
 
         <div class="row m-4">
-            <a class="btn btn-info" asp-controller="ShoppingCart" asp-action="Order">Order Now</a>
+            @*<a class="btn btn-info" asp-controller="ShoppingCart" asp-action="Order">Order Now</a>*@
+            <form asp-controller="ShoppingCart" asp-action="PayOrder" method="post">
+                <article>
+                    <script src="https://checkout.stripe.com/checkout.js"
+                            class="stripe-button"
+                            data-key="@StripeSettingsData.Value.PublishableKey"
+                            data-locale="auto"
+                            data-description="CinemaTicketSystem Application Payment"
+                            data-amount="@(Model.TotalPrice * 100)"
+                            data-label="Pay $@Model.TotalPrice">
+                    </script>
+
+                </article>
+            </form>
         </div>
 
         <table class="table">
@@ -38,7 +53,7 @@
                         <th scope="row">@(i+1)</th>
                         <td>@item.Ticket.MovieName</td>
                         <td>@item.Quantity</td>
-                        <td>@item.Ticket.Price</td>
+                        <td>$@item.Ticket.Price</td>
                         <td><a asp-controller="ShoppingCart" asp-action="DeleteFromShoppingCart" asp-route-id="@item.Ticket.Id" class="btn btn-danger">Delete From Shopping Cart</a></td>
                     </tr>
 
@@ -51,7 +66,7 @@
                     <th scope="col"></th>
                     <th scope="col"></th>
                     <th scope="col"></th>
-                    <th scope="col">@Model.TotalPrice</th>
+                    <th scope="col">$@Model.TotalPrice</th>
                     <th></th>
                 </tr>
             </tfoot>

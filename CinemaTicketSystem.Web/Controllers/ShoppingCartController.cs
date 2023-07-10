@@ -1,5 +1,6 @@
 ﻿using CinemaTicketSystem.Service.Interface;
 using Microsoft.AspNetCore.Mvc;
+using Stripe;
 using System;
 using System.Security.Claims;
 
@@ -46,43 +47,46 @@ namespace CinemaTicketSystem.Web.Controllers
             return result;
         }
 
-        //public IActionResult PayOrder(string stripeEmail, string stripeToken)
-        //{
-        //    var customerService = new CustomerService();
-        //    var chargeService = new ChargeService();
-        //    string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-        //    var order = this._shoppingCartService.getShoppingCartInfo(userId);
 
-        //    var customer = customerService.Create(new CustomerCreateOptions
-        //    {
-        //        Email = stripeEmail,
-        //        Source = stripeToken
-        //    });
+        public IActionResult PayOrder(string stripeEmail, string stripeToken)
+        {
+            var customerService = new CustomerService(); // CustomerService Ovozmozuva pravenje na uplata
+            var chargeService = new ChargeService(); // Kje ja ovozmozi samata uplata
+            string userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-        //var charge = chargeService.Create(new ChargeCreateOptions
-        //{
-        //    Amount = (Convert.ToInt32(order.TotalPrice) * 100),
-        //    Description = "EShop Application Payment",
-        //    Currency = "usd",
-        //    Customer = customer.Id
-        //});
+            var order = this._shoppingCartService.getShoppingCartInfo(userId);
 
-        //    if (charge.Status == "succeeded")
-        //    {
-        //        var result = this.Order();
+            var customer = customerService.Create(new CustomerCreateOptions
+            {
+                Email = stripeEmail,
+                Source = stripeToken
+            });
 
-        //        if (result)
-        //        {
-        //            return RedirectToAction("Index", "ShoppingCard");
-        //        }
-        //        else
-        //        {
-        //            return RedirectToAction("Index", "ShoppingCard");
-        //        }
-        //    }
+            // Ovde se pravi celiot proces na uplata
+            var charge = chargeService.Create(new ChargeCreateOptions
+            {
+                Amount = (Convert.ToInt32(order.TotalPrice) * 100), //Stripe converts to double so we multiply by 100
+                Description = "Cinema Ticket System Application Payment",
+                Currency = "usd",
+                Customer = customer.Id
+            });
 
-        //    return RedirectToAction("Index", "ShoppingCard");
-        //}
+            if (charge.Status == "succeeded")
+            {
+                var result = this.Order();
+
+                if (result)
+                {
+                    return RedirectToAction("Index", "ShoppingCart");
+                }
+                else
+                {
+                    return RedirectToAction("Index", "ShoppingCart");
+                }
+            }
+
+            return RedirectToAction("Index", "ShoppingCart");
+        }
     }
 }

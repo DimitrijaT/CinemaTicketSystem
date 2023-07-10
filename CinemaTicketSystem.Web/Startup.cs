@@ -12,6 +12,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Stripe;
 
 namespace CinemaTicketSystem.Web
 {
@@ -45,11 +46,19 @@ namespace CinemaTicketSystem.Web
 
 
 
+            // Commented out to work to disable the SMTP services:
 
-            services.AddScoped<EmailSettings>(es => emailService);
-            services.AddScoped<IEmailService, EmailService>(email => new EmailService(emailService));
-            services.AddScoped<IBackgroundEmailSender, BackgroundEmailSender>();
-            services.AddHostedService<ConsumeScopedHostedService>();
+            //services.AddScoped<EmailSettings>(es => emailService);
+            //services.AddScoped<IEmailService, EmailService>(email => new EmailService(emailService));
+            //services.AddScoped<IBackgroundEmailSender, BackgroundEmailSender>();
+            //services.AddHostedService<ConsumeScopedHostedService>();
+
+            // Stripe
+            services.Configure<StripeSettings>(Configuration.GetSection("Stripe"));
+
+
+
+
 
             services.AddTransient<ITicketService, TicketService>();
             services.AddTransient<IShoppingCartService, ShoppingCartService>();
@@ -70,6 +79,7 @@ namespace CinemaTicketSystem.Web
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            StripeConfiguration.SetApiKey(Configuration.GetSection("Stripe")["SecretKey"]);
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

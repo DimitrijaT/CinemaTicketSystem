@@ -159,3 +159,25 @@
    at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
    at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
    at CinemaTicketSystem.Web.Program.Main(String[] args) in C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\Program.cs:line 20
+2023-07-10 19:01:18.1377|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 22:47:33.7203|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 22:47:34.9933|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 22:47:34.9933|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 22:47:35.0163|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 23:25:23.3482|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 23:25:24.7783|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 23:25:24.7874|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 23:25:24.7988|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 23:25:29.4065|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 23:25:31.3639|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 23:25:33.9077|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 23:25:34.0443|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 23:38:03.3654|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 23:38:04.6782|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 23:38:04.6782|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 23:38:04.6937|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 23:38:07.8892|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 23:38:14.9223|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 23:38:15.0570|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 23:38:17.2628|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 23:38:17.2746|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
