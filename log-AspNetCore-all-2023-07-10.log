@@ -85,3 +85,77 @@
 2023-07-10 11:34:52.1733|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
 2023-07-10 11:34:52.1733|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
 2023-07-10 11:34:52.1733|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 12:33:20.8580|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 12:33:22.3023|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 12:33:22.3023|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 12:33:22.3202|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 14:12:49.9119|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 14:12:51.5154|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 14:12:51.5154|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 14:12:51.5350|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 14:15:31.0119|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:15:33.9135|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 14:15:34.0431|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:15:35.7021|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 14:15:35.7021|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:17:38.4872|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:17:40.1149|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 14:17:40.1289|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:17:41.9273|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 14:17:41.9414|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:17:43.2341|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 14:17:43.2341|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:20:17.7563|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 14:20:18.9253|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 14:20:18.9253|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 14:20:18.9253|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 14:20:21.9314|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:20:25.1535|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 14:20:25.2896|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:24:01.6644|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 14:24:03.2214|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 14:24:03.2214|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 14:24:03.2406|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 14:24:05.3738|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:24:07.9987|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 14:24:08.1219|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:24:09.8206|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 14:24:09.8320|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:24:11.3739|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 14:24:11.3739|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:25:20.4456|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 14:25:21.5860|0|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-07-10 14:25:21.5860|0|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-07-10 14:25:21.5939|0|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web 
+2023-07-10 14:25:30.8762|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:25:34.0931|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 14:25:34.2336|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 14:25:36.3139|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|Ticket was successfully added into ShoppingCart 
+2023-07-10 14:25:36.3139|0|INFO|CinemaTicketSystem.Service.Implementation.TicketService|GetAllProducts was called! 
+2023-07-10 15:34:27.3739|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 15:36:06.6068|0|ERROR|CinemaTicketSystem.Web.Program|Stopped program because of exception MailKit.ServiceNotAuthenticatedException: 5.7.0 Authentication Required. Learn more at
+5.7.0  https://support.google.com/mail/?p=WantAuthError ay26-20020a170906d29a00b009887f4e0291sm6125931ejb.27 - gsmtp
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at CinemaTicketSystem.Service.Implementation.EmailService.SendEmailAsync(List`1 allMails) in C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Service\Implementation\EmailService.cs:line 71
+   at CinemaTicketSystem.Service.Implementation.BackgroundEmailSender.DoWork() in C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Service\Implementation\BackgroundEmailSender.cs:line 27
+   at CinemaTicketSystem.Service.ConsumeScopedHostedService.DoWork() in C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Service\ConsumeScopedHostedService.cs:line 36
+   at CinemaTicketSystem.Service.ConsumeScopedHostedService.StartAsync(CancellationToken cancellationToken) in C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Service\ConsumeScopedHostedService.cs:line 23
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at CinemaTicketSystem.Web.Program.Main(String[] args) in C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\Program.cs:line 20
+2023-07-10 16:13:54.1880|0|DEBUG|CinemaTicketSystem.Web.Program|init main 
+2023-07-10 16:14:04.5794|0|ERROR|CinemaTicketSystem.Web.Program|Stopped program because of exception MailKit.Net.Smtp.SmtpCommandException: Email rejected
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at MailKit.Net.Smtp.SmtpClient.SendAsync(FormatOptions options, MimeMessage message, MailboxAddress sender, IList`1 recipients, CancellationToken cancellationToken, ITransferProgress progress)
+   at CinemaTicketSystem.Service.Implementation.EmailService.SendEmailAsync(List`1 allMails) in C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Service\Implementation\EmailService.cs:line 71
+   at CinemaTicketSystem.Service.Implementation.BackgroundEmailSender.DoWork() in C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Service\Implementation\BackgroundEmailSender.cs:line 27
+   at CinemaTicketSystem.Service.ConsumeScopedHostedService.DoWork() in C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Service\ConsumeScopedHostedService.cs:line 36
+   at CinemaTicketSystem.Service.ConsumeScopedHostedService.StartAsync(CancellationToken cancellationToken) in C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Service\ConsumeScopedHostedService.cs:line 23
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at CinemaTicketSystem.Web.Program.Main(String[] args) in C:\Users\dimit\source\repos\SixthSemester\ISHomework_CinemaTicketSystem\CinemaTicketSystem.Web\Program.cs:line 20

@@ -19,6 +19,29 @@ namespace CinemaTicketSystem.Repository.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("CinemaTicketSystem.Domain.DomainModels.EmailMessage", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Content")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MailTo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Subject")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("EmailMessages");
+                });
+
             modelBuilder.Entity("CinemaTicketSystem.Domain.DomainModels.Order", b =>
                 {
                     b.Property<Guid>("Id")
@@ -342,7 +365,7 @@ namespace CinemaTicketSystem.Repository.Migrations
             modelBuilder.Entity("CinemaTicketSystem.Domain.DomainModels.Order", b =>
                 {
                     b.HasOne("CinemaTicketSystem.Domain.Identity.CinemaTicketSystemUser", "User")
-                        .WithMany("Orders")
+                        .WithMany()
                         .HasForeignKey("UserId");
                 });
 

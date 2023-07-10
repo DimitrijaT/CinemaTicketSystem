@@ -24,6 +24,8 @@ namespace CinemaTicketSystem.Repository
 
         public virtual DbSet<TicketOrder> TicketOrders { get; set; }
 
+        public virtual DbSet<EmailMessage> EmailMessages { get; set; }
+
         // Adding FluentApi Entity Constriants
 
         protected override void OnModelCreating(ModelBuilder builder)

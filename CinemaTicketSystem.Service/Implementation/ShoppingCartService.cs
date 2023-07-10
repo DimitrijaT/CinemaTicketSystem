@@ -5,6 +5,7 @@ using CinemaTicketSystem.Service.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
 namespace CinemaTicketSystem.Service.Implementation
 {
@@ -12,15 +13,21 @@ namespace CinemaTicketSystem.Service.Implementation
     {
         private readonly IRepository<ShoppingCart> _shoppingCartRepository;
         private readonly IRepository<Order> _orderRepository;
+        private readonly IRepository<EmailMessage> _emailMessageRepository;
         private readonly IRepository<TicketOrder> _ticketOrderRepository;
         private readonly IUserRepository _userRepository;
 
-        public ShoppingCartService(IRepository<ShoppingCart> shoppingCartRepository, IUserRepository userRepository, IRepository<Order> orderRepository, IRepository<TicketOrder> ticketOrderRepository)
+        public ShoppingCartService(IRepository<ShoppingCart> shoppingCartRepository,
+            IUserRepository userRepository,
+            IRepository<Order> orderRepository,
+            IRepository<TicketOrder> ticketOrderRepository,
+            IRepository<EmailMessage> emailMessageRepository)
         {
             _shoppingCartRepository = shoppingCartRepository;
             _userRepository = userRepository;
             _orderRepository = orderRepository;
             _ticketOrderRepository = ticketOrderRepository;
+            _emailMessageRepository = emailMessageRepository;
         }
 
         public bool deleteProductFromSoppingCart(string userId, Guid productId)
@@ -83,6 +90,13 @@ namespace CinemaTicketSystem.Service.Implementation
                 var loggedInUser = this._userRepository.Get(userId);
                 var userCard = loggedInUser.UserCart;
 
+                //====================EMAIL====================//
+                EmailMessage message = new EmailMessage();
+                message.MailTo = loggedInUser.Email;
+                message.Subject = "Successfully created order!";
+                message.Status = false;
+                //====================EMAIL====================//
+
                 Order order = new Order
                 {
                     Id = Guid.NewGuid(),
@@ -104,6 +118,23 @@ namespace CinemaTicketSystem.Service.Implementation
                     Quantity = z.Quantity
                 }).ToList();
 
+                //====================EMAIL====================//
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine("Your order is completed. The order contains: ");
+
+                var totalPrice = 0.0;
+
+                for (int i = 0; i < result.Count(); i++)
+                {
+                    var item = result[i];
+                    totalPrice += item.Quantity * item.OrderedTicket.Price;
+                    sb.AppendLine((i + 1).ToString() + ". " + item.OrderedTicket.MovieName + " with price of: " + item.OrderedTicket.Price + " and quantity of: " + item.Quantity);
+                }
+
+                sb.AppendLine("Total Price: " + totalPrice.ToString());
+                message.Content = sb.ToString();
+                //====================EMAIL====================//
+
                 ticketOrders.AddRange(result);
 
                 foreach (var item in ticketOrders)
@@ -112,6 +143,10 @@ namespace CinemaTicketSystem.Service.Implementation
                 }
 
                 loggedInUser.UserCart.ShoppingCartTickets.Clear();
+
+                //====================EMAIL====================//
+                this._emailMessageRepository.Insert(message);
+                //====================EMAIL====================//
 
                 this._userRepository.Update(loggedInUser);
 
